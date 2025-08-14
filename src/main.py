@@ -30,6 +30,8 @@ def scrape_trending_for_language(lang: str):
 
     for repo in soup.find_all("article", class_="Box-row"):
         repo_name = repo.h2.a.get_text(strip=True).replace("\n", "").replace(" ", "")
+        print(f"\t🔹 Coletando dados de {repo_name}...", flush=True) 
+        
         stars_today_tag = repo.find("span", class_="d-inline-block float-sm-right")
         stars_today = stars_today_tag.get_text(strip=True).split()[0] if stars_today_tag else "0"
 
@@ -48,6 +50,7 @@ def scrape_trending_for_language(lang: str):
                 "branches": branches
             }
             repos_for_lang.append(repo_data)
+            print(f"\t✅ Dados de {repo_name} coletados com sucesso!", flush=True) 
 
     print(f"✅ {len(repos_for_lang)} repositórios coletados para {lang}", flush=True)
     return repos_for_lang
