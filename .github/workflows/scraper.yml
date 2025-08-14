@@ -15,7 +15,6 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.GH_PAT }}
 
-
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -29,22 +28,13 @@ jobs:
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
 
-      - name: Commit file to main
-        run: |
-          today=$(date +%F)
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/trending_repos_${today}.json
-          git commit -m "update: trending repos for ${today}" || echo "No changes to commit"
-          git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/${{ github.repository }}.git HEAD:main
-
-
-      - name: Commit file to dataset
+      - name: Commit file to dataset and remove from main
         run: |
           today=$(date +%F)
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
+          # ---------- enviar para dataset ----------
           # Se a branch dataset não existir, cria a branch
           if ! git ls-remote --exit-code --heads origin dataset; then
             git checkout --orphan dataset
@@ -56,7 +46,13 @@ jobs:
           git fetch origin dataset
           git checkout dataset
 
-          git checkout main -- data/trending_repos_${today}.json
-          git add data/trending_repos_${today}.json
+          git checkout main -- data/${today}.json.gz
+          git add data/${today}.json.gz
           git commit -m "dataset: add trending repos for ${today}" || echo "No changes to commit"
           git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/${{ github.repository }}.git HEAD:dataset
+
+          # ---------- remover da main ----------
+          git checkout main
+          git rm data/${today}.json.gz
+          git commit -m "remove daily JSON from main" || echo "No changes to commit"
+          git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/${{ github.repository }}.git HEAD:main
