@@ -24,6 +24,8 @@ jobs:
 
       - name: Run scraper
         run: python src/main.py
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
 
       - name: Commit file to main
         run: |
@@ -32,7 +34,8 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/trending_repos_${today}.json
           git commit -m "update: trending repos for ${today}" || echo "No changes to commit"
-          git push origin main
+          git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/${{ github.repository }}.git HEAD:main
+
 
       - name: Commit file to dataset
         run: |
@@ -45,7 +48,7 @@ jobs:
             git checkout --orphan dataset
             git rm -rf .
             git commit --allow-empty -m "Initialize dataset branch"
-            git push origin dataset
+            git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/${{ github.repository }}.git HEAD:dataset
           fi
 
           git fetch origin dataset
@@ -54,4 +57,4 @@ jobs:
           git checkout main -- data/trending_repos_${today}.json
           git add data/trending_repos_${today}.json
           git commit -m "dataset: add trending repos for ${today}" || echo "No changes to commit"
-          git push origin dataset
+          git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/${{ github.repository }}.git HEAD:dataset
