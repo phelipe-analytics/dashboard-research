@@ -9,7 +9,8 @@ HEADERS = {
 }
 
 def get_repo_details(repo_name, info_type: Literal["details", "branches", "contributors", "pulls"] = 'details'):
-    url = f"https://api.github.com/repos/{repo_name}{"" if info_type == 'details' else f'/{info_type}?per_page=100'}"
+    suffix = "" if info_type == 'details' else f"/{info_type}?per_page=100"
+    url = f"https://api.github.com/repos/{repo_name}{suffix}"
     print(f"\t\t🔹 Coletando {info_type} de {repo_name}...", flush=True) 
     r = requests.get(url, headers=HEADERS)
     
