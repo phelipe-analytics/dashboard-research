@@ -1,0 +1,57 @@
+name: GitHub Trending Scraper
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run scraper
+        run: python src/main.py
+
+      - name: Commit file to main
+        run: |
+          today=$(date +%F)
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/trending_repos_${today}.json
+          git commit -m "update: trending repos for ${today}" || echo "No changes to commit"
+          git push origin main
+
+      - name: Commit file to dataset
+        run: |
+          today=$(date +%F)
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Se a branch dataset não existir, cria a branch
+          if ! git ls-remote --exit-code --heads origin dataset; then
+            git checkout --orphan dataset
+            git rm -rf .
+            git commit --allow-empty -m "Initialize dataset branch"
+            git push origin dataset
+          fi
+
+          git fetch origin dataset
+          git checkout dataset
+
+          git checkout main -- data/trending_repos_${today}.json
+          git add data/trending_repos_${today}.json
+          git commit -m "dataset: add trending repos for ${today}" || echo "No changes to commit"
+          git push origin dataset
