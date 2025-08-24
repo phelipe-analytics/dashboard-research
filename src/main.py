@@ -85,7 +85,7 @@ def fetch_repo_data(repo_name: str, is_trending: bool, all_stars_yesterday: int 
     
     repo_data = {
         **details,
-        "stars_today": all_stars_today - all_stars_yesterday,
+        "stars_today": None if all_stars_yesterday == 0 else all_stars_today - all_stars_yesterday,
         "top_contributors": contributors,
         "pull_requests": pulls,
         "branches": branches,
