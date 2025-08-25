@@ -9,13 +9,13 @@ OUTPUT_DIR = "data"
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-with open("languages.json", "r", encoding="utf-8") as f:
-    languages = json.load(f)
+# with open("languages.json", "r", encoding="utf-8") as f:
+#    languages = json.load(f)
     
 with open("repos_collected.json", "r", encoding="utf-8") as f:
     repos_collected = json.load(f)
 
-languages.insert(0, "trending")  
+languages = ["trending"]
 
 all_data = {}
 trending_repos = []
