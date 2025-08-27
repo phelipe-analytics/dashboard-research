@@ -1,110 +1,146 @@
 [
   {
+    "name": "asgeirtj/system_prompts_leaks",
+    "stars": 11886
+  },
+  {
     "name": "plait-board/drawnix",
-    "stars": 7984
-  },
-  {
-    "name": "HKUDS/DeepCode",
-    "stars": 3519
-  },
-  {
-    "name": "winapps-org/winapps",
-    "stars": 7315
-  },
-  {
-    "name": "moeru-ai/airi",
-    "stars": 10436
-  },
-  {
-    "name": "HunxByts/GhostTrack",
-    "stars": 4715
+    "stars": 9076
   },
   {
     "name": "willccbb/verifiers",
-    "stars": 2286
+    "stars": 2493
   },
   {
-    "name": "spotDL/spotify-downloader",
-    "stars": 21536
-  },
-  {
-    "name": "anuraghazra/github-readme-stats",
-    "stars": 75448
-  },
-  {
-    "name": "karpathy/nn-zero-to-hero",
-    "stars": 15773
-  },
-  {
-    "name": "asgeirtj/system_prompts_leaks",
-    "stars": 9724
-  },
-  {
-    "name": "microsoft/generative-ai-for-beginners",
-    "stars": 95983
-  },
-  {
-    "name": "GitHubDaily/GitHubDaily",
-    "stars": 40911
-  },
-  {
-    "name": "yt-dlp/yt-dlp",
-    "stars": 124096
-  },
-  {
-    "name": "rothgar/awesome-tuis",
-    "stars": 11520
-  },
-  {
-    "name": "scottpetrovic/mesh2motion-app",
-    "stars": 1215
-  },
-  {
-    "name": "EbookFoundation/free-programming-books",
-    "stars": 366347
-  },
-  {
-    "name": "midday-ai/midday",
-    "stars": 11446
-  },
-  {
-    "name": "django/django",
-    "stars": 84772
-  },
-  {
-    "name": "Klipper3d/klipper",
-    "stars": 10735
+    "name": "HKUDS/DeepCode",
+    "stars": 4135
   },
   {
     "name": "TheAlgorithms/Java",
-    "stars": 62958
+    "stars": 63044
+  },
+  {
+    "name": "MODSetter/SurfSense",
+    "stars": 6873
+  },
+  {
+    "name": "eythaann/Seelen-UI",
+    "stars": 11011
+  },
+  {
+    "name": "SimplifyJobs/Summer2026-Internships",
+    "stars": 40417
+  },
+  {
+    "name": "tw93/Pake",
+    "stars": 41533
+  },
+  {
+    "name": "GitHubDaily/GitHubDaily",
+    "stars": 41249
+  },
+  {
+    "name": "IBM/mcp-context-forge",
+    "stars": 1866
+  },
+  {
+    "name": "vanshb03/Summer2026-Internships",
+    "stars": 6274
+  },
+  {
+    "name": "opf/openproject",
+    "stars": 11995
+  },
+  {
+    "name": "onlook-dev/onlook",
+    "stars": 21839
+  },
+  {
+    "name": "HandsOnLLM/Hands-On-Large-Language-Models",
+    "stars": 14743
+  },
+  {
+    "name": "winapps-org/winapps",
+    "stars": 7686
+  },
+  {
+    "name": "moeru-ai/airi",
+    "stars": 10903
+  },
+  {
+    "name": "HunxByts/GhostTrack",
+    "stars": 4988
+  },
+  {
+    "name": "spotDL/spotify-downloader",
+    "stars": 21663
+  },
+  {
+    "name": "anuraghazra/github-readme-stats",
+    "stars": 75540
+  },
+  {
+    "name": "karpathy/nn-zero-to-hero",
+    "stars": 16249
+  },
+  {
+    "name": "microsoft/generative-ai-for-beginners",
+    "stars": 96123
+  },
+  {
+    "name": "yt-dlp/yt-dlp",
+    "stars": 124281
+  },
+  {
+    "name": "rothgar/awesome-tuis",
+    "stars": 11814
+  },
+  {
+    "name": "scottpetrovic/mesh2motion-app",
+    "stars": 1261
+  },
+  {
+    "name": "EbookFoundation/free-programming-books",
+    "stars": 366448
+  },
+  {
+    "name": "midday-ai/midday",
+    "stars": 11492
+  },
+  {
+    "name": "django/django",
+    "stars": 84787
+  },
+  {
+    "name": "Klipper3d/klipper",
+    "stars": 10741
   },
   {
     "name": "simstudioai/sim",
-    "stars": 12212
+    "stars": 12385
   },
   {
     "name": "puckeditor/puck",
-    "stars": 8752
+    "stars": 8795
   },
   {
     "name": "RSSNext/Folo",
-    "stars": 32519
+    "stars": 32697
   },
   {
     "name": "dream-num/univer",
-    "stars": 10652
+    "stars": 10675
   },
   {
     "name": "Leantime/leantime",
-    "stars": 7512
+    "stars": 7567
   },
   {
     "name": "microsoft/ai-agents-for-beginners",
-    "stars": 35293
+    "stars": 35384
   },
   {
     "name": "Budibase/budibase",
-    "stars": 26381
+    "stars": 26445
   }
 ]
