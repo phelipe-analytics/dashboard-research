@@ -1,147 +1,159 @@
 [
   {
     "name": "asgeirtj/system_prompts_leaks",
-    "stars": 13970
+    "stars": 16040
   },
   {
-    "name": "plait-board/drawnix",
-    "stars": 9525
-  },
-  {
-    "name": "QuentinFuxa/WhisperLiveKit",
-    "stars": 1548
-  },
-  {
-    "name": "microsoft/terminal",
-    "stars": 99444
+    "name": "Canner/WrenAI",
+    "stars": 10373
   },
   {
     "name": "firecracker-microvm/firecracker",
-    "stars": 29449
+    "stars": 29704
   },
   {
-    "name": "karpathy/nn-zero-to-hero",
-    "stars": 16607
-  },
-  {
-    "name": "santinic/audiblez",
-    "stars": 4709
-  },
-  {
-    "name": "googleapis/genai-toolbox",
-    "stars": 9955
-  },
-  {
-    "name": "OpenPipe/ART",
-    "stars": 6216
-  },
-  {
-    "name": "eythaann/Seelen-UI",
-    "stars": 11535
+    "name": "chroma-core/chroma",
+    "stars": 22466
   },
   {
     "name": "twbs/bootstrap",
-    "stars": 173019
+    "stars": 173137
   },
   {
-    "name": "willccbb/verifiers",
-    "stars": 2648
+    "name": "santinic/audiblez",
+    "stars": 5112
   },
   {
-    "name": "spf13/cobra",
-    "stars": 41629
+    "name": "karpathy/nn-zero-to-hero",
+    "stars": 16959
   },
   {
-    "name": "HKUDS/DeepCode",
-    "stars": 4324
-  },
-  {
-    "name": "TheAlgorithms/Java",
-    "stars": 63113
+    "name": "hashicorp/terraform",
+    "stars": 46313
   },
   {
     "name": "MODSetter/SurfSense",
-    "stars": 7031
+    "stars": 7202
   },
   {
-    "name": "SimplifyJobs/Summer2026-Internships",
-    "stars": 40498
-  },
-  {
-    "name": "tw93/Pake",
-    "stars": 41731
-  },
-  {
-    "name": "GitHubDaily/GitHubDaily",
-    "stars": 41402
-  },
-  {
-    "name": "IBM/mcp-context-forge",
-    "stars": 2026
-  },
-  {
-    "name": "vanshb03/Summer2026-Internships",
-    "stars": 6326
+    "name": "microsoft/terminal",
+    "stars": 99581
   },
   {
     "name": "opf/openproject",
-    "stars": 12102
+    "stars": 12277
+  },
+  {
+    "name": "plait-board/drawnix",
+    "stars": 9770
+  },
+  {
+    "name": "QuentinFuxa/WhisperLiveKit",
+    "stars": 1908
+  },
+  {
+    "name": "googleapis/genai-toolbox",
+    "stars": 10069
+  },
+  {
+    "name": "OpenPipe/ART",
+    "stars": 6312
+  },
+  {
+    "name": "eythaann/Seelen-UI",
+    "stars": 11732
+  },
+  {
+    "name": "willccbb/verifiers",
+    "stars": 2738
+  },
+  {
+    "name": "spf13/cobra",
+    "stars": 41665
+  },
+  {
+    "name": "HKUDS/DeepCode",
+    "stars": 4408
+  },
+  {
+    "name": "TheAlgorithms/Java",
+    "stars": 63143
+  },
+  {
+    "name": "SimplifyJobs/Summer2026-Internships",
+    "stars": 40540
+  },
+  {
+    "name": "tw93/Pake",
+    "stars": 41783
+  },
+  {
+    "name": "GitHubDaily/GitHubDaily",
+    "stars": 41452
+  },
+  {
+    "name": "IBM/mcp-context-forge",
+    "stars": 2132
+  },
+  {
+    "name": "vanshb03/Summer2026-Internships",
+    "stars": 6348
   },
   {
     "name": "onlook-dev/onlook",
-    "stars": 21941
+    "stars": 21969
   },
   {
     "name": "HandsOnLLM/Hands-On-Large-Language-Models",
-    "stars": 14917
+    "stars": 14957
   },
   {
     "name": "winapps-org/winapps",
-    "stars": 7857
+    "stars": 7979
   },
   {
     "name": "moeru-ai/airi",
-    "stars": 11236
+    "stars": 11555
   },
   {
     "name": "HunxByts/GhostTrack",
-    "stars": 5051
+    "stars": 5108
   },
   {
     "name": "spotDL/spotify-downloader",
-    "stars": 21694
+    "stars": 21717
   },
   {
     "name": "anuraghazra/github-readme-stats",
-    "stars": 75563
+    "stars": 75589
   },
   {
     "name": "microsoft/generative-ai-for-beginners",
-    "stars": 96192
+    "stars": 96254
   },
   {
     "name": "yt-dlp/yt-dlp",
-    "stars": 124403
+    "stars": 124518
   },
   {
     "name": "rothgar/awesome-tuis",
-    "stars": 11949
+    "stars": 12054
   },
   {
     "name": "scottpetrovic/mesh2motion-app",
-    "stars": 1284
+    "stars": 1310
   },
   {
     "name": "EbookFoundation/free-programming-books",
-    "stars": 366554
+    "stars": 366662
   },
   {
     "name": "midday-ai/midday",
-    "stars": 11514
+    "stars": 11517
   },
   {
     "name": "django/django",
-    "stars": 84800
+    "stars": 84809
   },
   {
     "name": "Klipper3d/klipper",
@@ -149,30 +161,30 @@
   },
   {
     "name": "simstudioai/sim",
-    "stars": 12521
+    "stars": 12759
   },
   {
     "name": "puckeditor/puck",
-    "stars": 8894
+    "stars": 9000
   },
   {
     "name": "RSSNext/Folo",
-    "stars": 32891
+    "stars": 32994
   },
   {
     "name": "dream-num/univer",
-    "stars": 10694
+    "stars": 10714
   },
   {
     "name": "Leantime/leantime",
-    "stars": 7621
+    "stars": 7688
   },
   {
     "name": "microsoft/ai-agents-for-beginners",
-    "stars": 35462
+    "stars": 35556
   },
   {
     "name": "Budibase/budibase",
-    "stars": 26517
+    "stars": 26569
   }
 ]
